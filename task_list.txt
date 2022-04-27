@@ -1,0 +1,33 @@
+Logo
+
+Design
+
+1/ Info panel #check
+	- User info
+	+ Img
+	+ UID
+	+ Item count
+	+ Cash
+	+ Choose/Create user
+	- History
+	- Cart
+	- 3 more button
+2/ Nav panel
+	- Search button -> visible Search panel
+	- Category
+
+3/ Item show panel (Main pos - 1) --- Load from Datatable
+	- Click on item -> visible Item detail panel
+	- Numpage
+4/ Search panel (Main pos - 2)
+	- Name
+	- ID
+	- Code
+	- BarCode
+	- QRCode
+	- Load img/Using camera
+5/ Item detail panel (Main pos - 3)
+	- 
+6/ History panel (Main pos - 4)
+	- list items in Datatable loaded
+7/ Cart panel (Main pos - 5)

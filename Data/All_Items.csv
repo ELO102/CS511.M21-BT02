@@ -1,0 +1,26 @@
+ID, name, price, type, txt_path, img_path, wire
+101, Chuột không dây Prolink PMW5008, 200000, Chuột, Data\101.txt, Data\101.jpg, false
+102, Chuột không dây Prolink PMW5007, 200000, Chuột, Data\102.txt, Data\102.jpg, false
+103, Chuột game có dây Elecom M-G02URWH, 1990000, Chuột, Data\103.txt, Data\103.jpg, true
+104, Chuột game có dây Prolink PMG9006, 360000, Chuột, Data\104.txt, Data\104.jpg, true
+105, Chuột vi tính Logitech B100, 79000, Chuột, Data\105.txt, Data\105.jpg, true
+106, Chuột máy tính Logitech M100R, 120000, Chuột, Data\106.txt, Data\106.jpg, true
+107, Chuột không dây Elecom M-IR07DRWH, 239000, Chuột, Data\107.txt, Data\107.jpg, false
+108, Chuột không dây blueled Elecom M-DY12DB, 249000, Chuột, Data\108.txt, Data\108.jpg, false
+109, Chuột gaming có dây Zadez G-156M, 300000, Chuột, Data\109.txt, Data\109.jpg, true
+110, Chuột không dây Targus AMW620, 349000, Chuột, Data\110.txt, Data\110.jpg, false
+111, Chuột không dây Elecom M-BL20DBGN, 349000, Chuột, Data\111.txt, Data\111.jpg, false
+112, Chuột không dây Logitech M238, 399000, Chuột, Data\112.txt, Data\112.jpg, false
+113, Chuột vi tính Prolink PMG9501, 499000, Chuột, Data\113.txt, Data\113.jpg, true
+114, Chuột gaming Logitech G102 GEN2, 599000, Chuột, Data\114.txt, Data\114.jpg, true
+115, Chuột Gaming có dây Zadez GT-616M, 650000, Chuột, Data\115.txt, Data\115.jpg, true
+201, Bàn phím Logitech K120, 149000, Bàn phím, Data\201.txt, Data\201.jpg, true
+202, Bàn phím vi tính Prolink PKCS-1005, 179000, Bàn phím, Data\202.txt, Data\202.jpg, true
+203, Bàn phím vi tính Prolink PKGM9302, 290000, Bàn phím, Data\203.txt, Data\203.jpg, true
+204, Bàn phím không dây Rapoo K2600, 299000, Bàn phím, Data\204.txt, Data\204.jpg, false
+205, Bàn phím gaming HAVIT KB866L, 340000, Bàn phím, Data\205.txt, Data\205.jpg, true
+206, Bàn phím Gaming DareU LK145, 340000, Bàn phím, Data\206.txt, Data\206.png, true
+207, Bàn phím cơ Gaming DAREU EK87, 499000, Bàn phím, Data\207.txt, Data\207.jpg, true
+208, Bàn phím Rapoo V500L Rainbow, 540000, Bàn phím, Data\208.txt, Data\208.jpg, true
+209, Bàn phím Rapoo V500 Pro, 590000, Bàn phím, Data\209.txt, Data\209.png, false
+210, Bàn phím cơ E-Dra EK389 V2, 590000, Bàn phím, Data\210.txt, Data\210.jpg, true

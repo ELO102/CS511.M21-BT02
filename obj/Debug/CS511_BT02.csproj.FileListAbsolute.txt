@@ -1,0 +1,11 @@
+E:\Study\CS511.M21\CS511.M21-BT02\bin\Debug\WindowsFormsApp1.exe.config
+E:\Study\CS511.M21\CS511.M21-BT02\bin\Debug\WindowsFormsApp1.exe
+E:\Study\CS511.M21\CS511.M21-BT02\bin\Debug\WindowsFormsApp1.pdb
+E:\Study\CS511.M21\CS511.M21-BT02\obj\Debug\CS511_BT02.csproj.AssemblyReference.cache
+E:\Study\CS511.M21\CS511.M21-BT02\obj\Debug\CS511_BT02.csproj.SuggestedBindingRedirects.cache
+E:\Study\CS511.M21\CS511.M21-BT02\obj\Debug\WindowsFormsApp1.Shop.resources
+E:\Study\CS511.M21\CS511.M21-BT02\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\Study\CS511.M21\CS511.M21-BT02\obj\Debug\CS511_BT02.csproj.GenerateResource.cache
+E:\Study\CS511.M21\CS511.M21-BT02\obj\Debug\CS511_BT02.csproj.CoreCompileInputs.cache
+E:\Study\CS511.M21\CS511.M21-BT02\obj\Debug\WindowsFormsApp1.exe
+E:\Study\CS511.M21\CS511.M21-BT02\obj\Debug\WindowsFormsApp1.pdb

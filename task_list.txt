@@ -1,8 +1,10 @@
 Logo
 
-Design
+Design ###
 
-1/ Info panel #check
+Code ***
+
+1/ Info panel ###
 	- User info
 	+ Img
 	+ UID
@@ -16,18 +18,23 @@ Design
 	- Search button -> visible Search panel
 	- Category
 
-3/ Item show panel (Main pos - 1) --- Load from Datatable
+3/ Item show panel (Main pos - 1) --- Load from Datatable ###
 	- Click on item -> visible Item detail panel
 	- Numpage
-4/ Search panel (Main pos - 2)
+4/ Search panel (Main pos - 2) ###
 	- Name
 	- ID
 	- Code
 	- BarCode
 	- QRCode
 	- Load img/Using camera
-5/ Item detail panel (Main pos - 3)
+	- Price range
+5/ Item detail panel (Main pos - 3) ###
 	- 
-6/ History panel (Main pos - 4)
+6/ History panel (Main pos - 4) ###
 	- list items in Datatable loaded
-7/ Cart panel (Main pos - 5)
+7/ Cart panel (Main pos - 5) ###
+8/ Payment panel (Main pos - 6) ###
+	- Destination
+	- Time
+

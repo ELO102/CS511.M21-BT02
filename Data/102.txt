@@ -1,0 +1,10 @@
+Model:	PMW5007
+Nhà sản xuất:	Prolink
+Xuất xứ:	Trung Quốc
+Thời gian bảo hành:	12 tháng
+Độ phân giải:	1600 DPI
+Dây dẫn:	Không dây
+Phím chức năng:	3 phím chức năng
+Sử dụng pin:	AA
+Khối lượng sản phẩm (kg):	0.0475 kg
+Kích thước sản phẩm:	102.7 x 60.7 x 35.9 mm

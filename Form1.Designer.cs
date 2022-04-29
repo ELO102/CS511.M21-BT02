@@ -2016,6 +2016,7 @@
             this.button9.TabIndex = 23;
             this.button9.Text = "Đã xem";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.Viewed_click);
             // 
             // Shop
             // 

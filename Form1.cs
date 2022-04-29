@@ -257,7 +257,8 @@ namespace WindowsFormsApp1
                 }
 
                 pan.Visible = true; // show panel
-                DataRow dr = dt[index + page_idx * 10]; // get row[idx] in datatable
+                DataRow temp = dt[index + page_idx * 10]; // get row[idx] in datatable
+                DataRow dr = dt_all_items.Select("ID = '" + temp["ID"] + "'").First();
 
                 pan.Name = dr["ID"].ToString();
 
@@ -642,7 +643,7 @@ namespace WindowsFormsApp1
         }
         private bool Update_add1_listView1()
         {
-            ListViewItem item = new ListViewItem(DateTime.Now.ToString("yyyy-MM-dd h:mm:ss tt"));
+            ListViewItem item = new ListViewItem(DateTime.Now.ToString("dd/MM/yyyy h:mm:ss tt"));
             if (!string.IsNullOrEmpty(textBox11.Text))
                 item.SubItems.Add(textBox11.Text);
             else

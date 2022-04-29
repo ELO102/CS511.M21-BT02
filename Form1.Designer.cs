@@ -187,6 +187,7 @@
             this.label28 = new System.Windows.Forms.Label();
             this.panel_Nav = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.panel_Info.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -1987,6 +1988,7 @@
             this.panel_Nav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(249)))), ((int)(((byte)(219)))));
             this.panel_Nav.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.logo_removebg_preview___Copy;
             this.panel_Nav.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel_Nav.Controls.Add(this.button9);
             this.panel_Nav.Controls.Add(this.button12);
             this.panel_Nav.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Nav.Location = new System.Drawing.Point(300, 0);
@@ -2004,6 +2006,16 @@
             this.button12.Text = "Tìm kiếm";
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.Show_panelSearch_click);
+            // 
+            // button9
+            // 
+            this.button9.AutoSize = true;
+            this.button9.Location = new System.Drawing.Point(108, 71);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(53, 23);
+            this.button9.TabIndex = 23;
+            this.button9.Text = "Đã xem";
+            this.button9.UseVisualStyleBackColor = true;
             // 
             // Shop
             // 
@@ -2248,6 +2260,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.ColumnHeader columnHeader14;
+        private System.Windows.Forms.Button button9;
     }
 }
 

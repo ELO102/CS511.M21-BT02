@@ -31,6 +31,7 @@ namespace WindowsFormsApp1
         private DataTable dt_all_items = GetAllItems();
         private DataTable dt_cart_items = new DataTable();
         //private DataTable dt_history = new DataTable();
+        private DataTable dt_historyView = new DataTable();
         private int curChosen_id = -1;
         private bool isPayAll = false;
 
@@ -51,6 +52,9 @@ namespace WindowsFormsApp1
             //dt_history.Columns.Add("time", typeof(string));
             //dt_history.Columns.Add("total", typeof(int));
             //dt_history.Columns.Add("status", typeof(string));
+
+            dt_historyView.Columns.Add("ID", typeof(string));
+
         }
         private void hide_all_mainPanel()
         {
@@ -224,6 +228,39 @@ namespace WindowsFormsApp1
 
                 pan.Name = dr["ID"].ToString();
                 
+                string path_img = dr["img_path"].ToString();
+                PictureBox pb = pan.Controls.OfType<PictureBox>().First();
+                pb.ImageLocation = Path.Combine(strFolder, path_img);
+
+                Label[] label = pan.Controls.OfType<Label>().ToArray();
+                label[1].Text = dr["name"].ToString();
+                label[0].Text = dr["price"].ToString();
+
+                index++;
+            }
+        }
+        private void Show_Items_viewed()
+        {
+            int index = 0;
+            int page_idx = Convert.ToInt32(numericUpDown_page.Value);
+            index = index + page_idx * 10;
+            DataView dt_view = new DataView(dt_historyView);
+            DataRow[] dt = dt_view.ToTable(true, "id").Select();
+            numericUpDown_page.Maximum = dt.Length / 10;
+            foreach (var pan in tableLayoutPanel_itemsShow.Controls.OfType<Panel>()) // iter all panel by Add order
+            {
+                pan.Visible = false; // hide panel
+
+                if (index + 1 > dt.Length) // checking if current_index > num_movie 
+                {
+                    continue; // if true then pass this panel and don't show it
+                }
+
+                pan.Visible = true; // show panel
+                DataRow dr = dt[index + page_idx * 10]; // get row[idx] in datatable
+
+                pan.Name = dr["ID"].ToString();
+
                 string path_img = dr["img_path"].ToString();
                 PictureBox pb = pan.Controls.OfType<PictureBox>().First();
                 pb.ImageLocation = Path.Combine(strFolder, path_img);
@@ -430,6 +467,12 @@ namespace WindowsFormsApp1
             show_panel(panel_itemsShow);
             Show_Items_Condition();
         }
+        private void Viewed_click(object sender, EventArgs e)
+        {
+            hide_all_mainPanel();
+            show_panel(panel_itemsShow);
+            Show_Items_viewed();
+        }
         private void Cart_click(object sender, EventArgs e)
         {
             hide_all_mainPanel();
@@ -536,6 +579,7 @@ namespace WindowsFormsApp1
             Panel pan = (Panel)sender;
             curChosen_id = Int32.Parse(pan.Name);
             Show_Items_Single(pan);
+            dt_historyView.Rows.Add(pan.Name);
             hide_all_mainPanel();
             show_panel(panel_itemDetail);
         }
@@ -545,6 +589,7 @@ namespace WindowsFormsApp1
             Panel pan = (Panel)((Control)sender).Parent;
             curChosen_id = Int32.Parse(pan.Name);
             Show_Items_Single(pan);
+            dt_historyView.Rows.Add(pan.Name);
             hide_all_mainPanel();
             show_panel(panel_itemDetail);
         }
